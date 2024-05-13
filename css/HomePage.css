@@ -1,0 +1,756 @@
+/* Start Variables */
+:root{
+    --main-color:#0a233f;
+    --seconed-color:#00b2e2;
+
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Open Sans",Arial,san-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* End Global Rules */
+
+/* ----------------------------------- FAWZII ------------------------------------- */
+/* Start Header */
+
+.header{
+    
+    background-color: #0a233f;
+    position: relative;
+    box-shadow: 0 0 10px #ddd;
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 15px;
+}
+.header .logo{
+    color: #ffffff;
+    font-size: x-large;
+    font-weight: bold;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}    
+.header .logo img{
+    width: 322px;
+}
+.header .main-nav{
+    display: flex;
+
+}
+.header .main-nav > li >a{
+
+    height: 78px;
+    padding: 0px 15px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    display:flex;
+    align-items: center;
+    position: relative;
+    transition: 0.3s;
+    overflow:hidden;
+    margin-top: 70px;
+}
+.header .main-nav > li >a::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: skyblue;
+    top: 0;
+    left: -100%;
+    transition: 0.3s;
+}
+.header .main-nav > li >a:hover{
+    background-color: #0a233f;
+    color: skyblue;
+}
+.header .main-nav > li >a:hover::before{
+    left: 0;
+}
+ 
+.header .container .ser form{
+   
+    position: absolute;
+    right: 50px;
+    top: 30px;
+}
+
+
+.header .container .ser .college-menu {
+    background-color: white;
+    position: absolute;
+    z-index: 2;
+    right: 125px;
+    top: 205px;
+    opacity: 0; 
+    z-index: -5;
+    transition: .5s;
+}
+
+.header .ser .main-nav .colleges:hover .college-menu{
+    z-index: 100;
+    opacity: 1;
+    top: 180px;
+}
+
+.header .container .ser .college-menu li{
+    font-size: 19px;
+    padding: 5px 25px;
+    margin: 3px 5px;
+    position: relative;
+}
+
+.header .container .ser .college-menu li a{
+    color: var(--main-color);
+    font-weight: 300;
+    position: relative;
+    
+}
+.header .container .ser .college-menu li::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 115%;
+    background-color: #dad7d7;
+    left: -5px;
+    top: -3px;
+    z-index: -1;
+    transition: .5s;
+}
+
+
+.header .container .ser .college-menu li:hover::before{
+    width: 310.344px;
+}
+
+
+.header .container .ser .college-menu li a::after{
+    content: "";
+    position: absolute;
+    width: 310.45px;
+    height: 2px;
+    background-color:#dad7d7;
+    left: -30px;
+    bottom: -9px;
+}
+
+
+
+
+
+/* End Header */
+
+
+.vid video{
+    width: 100%;
+    pointer-events: none;
+}
+
+
+/* ----------------------------------- Abdo Walid ------------------------------------- */
+
+
+.h1{
+    text-align: center;
+    color: #0a233f;
+    font-weight: 600;
+    
+}
+.explore .container{
+    width:100% ; 
+    margin: 50px auto;
+    background-color: #0a233f;
+    display: flex;
+    padding: left 10px; ;
+}
+.explore .container div{
+    padding: 20px;
+    width: 300px;
+
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+    flex: 1
+}
+
+.txt{
+    margin-bottom: 20%;
+    color: aqua;
+    align-items: center;
+    
+}
+
+.explore .p1{
+    font-size: .95em;
+}
+.explore .h2{
+    color: #0a233f;
+    font-size:  1.7rem;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+   
+}
+.flexcard{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flexcard .cards{
+    
+    display: flex;
+    flex: 1;
+    margin: 50px 0px ;
+    
+}
+.flexcard .cards .card_div{
+    margin: 0px 10px;
+}
+
+
+
+
+.card-img img{
+    width: 350px;
+}
+.card-title{
+   
+
+    margin: 15px 0px;
+    height: 50px;
+}
+.cyan{
+    border: 2px solid #00b2e2;
+    margin: 0.25em 0 1em 0;
+    width: 15%;
+}
+.card-body{
+    margin: 0;
+    height: 75px;
+    margin: 40px 0px;
+    
+   
+
+}
+.card-footer{
+  
+    cursor: pointer; 
+    display: inline-block; 
+    background-color: #0a233f; 
+    padding: 11px;
+     
+   
+    
+}
+
+.card-footer:hover{
+    background-color: #00b2e2;
+    color: #0a233f;
+}
+.card-footer a{
+    color: beige;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+/* Shefo */
+
+.flexSplit {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: flex-start;
+    align-content: flex-start;
+}
+.flexSplit.sixtyForty>.flexLeft {
+    flex: 1 1 60%;
+    max-width: 60%;
+}
+.flexSplit .flexLeft .flexHead {
+    background: #00b2e2;
+}
+.flexSplit .flexHead .flexContain {
+    padding: 25px 30px 20px 30px;
+}
+.flexSplit .flexHead h2 {
+    font-size: 1.65em;
+}
+
+.flexSplit .flexHead h2 {
+    font-size: 2em;
+    padding: 0px;
+    margin-bottom: 0px;
+    font-weight: 700;
+    margin-top: 0px;
+    
+}
+h2 {
+    font-size: 1.9em;
+    line-height: 1.25em;
+    font-weight: 600;
+    color: #0a233f;
+    font-family: "Open Sans",Arial,san-serif;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.btn-small {
+    padding: 12px 20px;
+    font-size: 1rem;
+}
+.btn-blue {
+    font-family: "Open Sans",Arial,san-serif;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #0a233f;
+    color: #fff ;
+    
+}
+
+.btn-blue:hover {
+    background-color:blue;
+}
+.flexSplit .news .newsList {
+    padding: 20px 20px 20px 0;
+    
+}
+
+
+.newsList  li{
+    font-family: "Open Sans",Arial,san-serif;
+    margin-bottom: 1.5em ;
+    padding: 0px ;
+    margin-left: 25px;
+}
+ .flexBlock h3 {
+    font-size: 1.15em;
+    margin: 0px;
+}
+/* h3 {
+    font-size: 1.65em;
+    line-height: 1.25em;
+    font-weight: 600;
+    color: #0a233f;
+    font-family: "Open Sans",Arial,san-serif;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    
+
+} */
+.flexSplit .news .newsList a {
+    color: #236595;
+    line-height: 1.5em;
+    font-weight: bold;
+    display: block;
+}
+.flexSplit .news .newsList a {
+    color: #236595;
+    line-height: 1.5em;
+    font-weight: bold;
+    display: block;
+}
+a {
+    font-family: "Open Sans",Arial,san-serif;
+    color: #236595;
+    text-decoration: none;
+}
+.flexSplit.sixtyForty>.flexRight {
+    flex: 1 1 40%;
+    max-width: 39.85%;
+}
+.flexRight {
+    background: #e9e9ea;
+}
+ .flexRight .flexHead {
+    background: #a7a8a9;
+}
+.flexBlock {
+    padding: 0px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-content: flex-start;
+    align-content: flex-start;
+}
+.flexSplit.events .eventList {
+    padding: 30px 10px 20px 0px;
+    margin-left: 10px ;
+}
+.flexSplit .events .eventList {
+    padding: 30px 30px 30px 0;
+    list-style-type: none;
+}
+
+.flexSplit .events .eventList li {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    margin-bottom: 20px ;
+    padding: 0px ;
+}
+.flexSplit .events .eventList .eventIcon {
+    -webkit-flex: 1 1 40%;
+    flex: 1 1 40%;
+    max-width: 150px;
+    font-weight: 700;
+    text-align: center;
+}
+.flexSplit .events .eventList .eventIcon .month {
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 10px 0px;
+    background: #0a233f;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 0px 0px 0px;
+}
+.flexSplit .events .eventList .eventIcon .date {
+    font-size: 3.7em;
+    margin: 0;
+    padding: 5px 0px 30px 0px;
+    background: #0a233f;
+    color: #fff;
+    font-size: 2.25em;
+    padding-bottom: 20px;
+}
+.flexSplit .events .eventList .eventInfo {
+    -webkit-flex: 1 1 75%;
+    flex: 1 1 75%;
+    padding-left: 1.5em;
+    margin: 0px;
+    -webkit-flex: 1 1 75%;
+    flex: 1 1 75%;
+    padding-left: 1em;
+}
+.flexSplit .events .eventList .eventInfo a {
+    color: #236595;
+    line-height: 1.5em;
+    font-weight: bold;
+    display: block;
+    text-decoration: none;
+}
+
+.numbers {
+    padding: 0px;
+}
+.tier.numbers {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 30px;
+}
+.tier {
+    margin-bottom: 30px;
+}
+.blue {
+    background: #0a233f;
+}
+.flexGrid {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: flex-start;
+    align-content: flex-start;
+    --gap: 2%;
+    width: calc(100% + var(--gap));
+    margin: 0px 0 30px calc(-1 * var(--gap));
+}
+.tier.numbers .flexGrid>.flexCard {
+    flex: 1 1 32% !important;
+    max-width: 31.333333% !important;
+}
+.flexGrid.col3>.flexCard {
+    flex: 1 1 32%;
+    max-width: 31.333333%;
+}
+.flexGrid .flexCard {
+    flex: 1 1 auto;
+    max-width: 100%;
+}
+.flexGrid .flexCard {
+    flex: 1 1 auto;
+    list-style-type: none;
+}
+.numbers img {
+    width: 50%;
+    padding-bottom: 15px;
+}
+.tier.numbers img {
+    max-width: unset;
+    width: 100%;
+}
+.tier.numbers img {
+    margin: 0 auto;
+    max-width: 350px;
+}
+
+/* --------------------------------------Emaad------------------------------------- */
+
+/* Start SocialMedia */
+
+
+.last .container .social{
+    display: flex;
+    margin: 45px 0;
+    align-items: center;
+}
+
+
+.last .container .social .get h2{
+    color: var(--main-color);
+    font-size: 35px;
+}
+
+.last .container .links{
+    display: flex;
+    position: absolute;
+    right: 0;
+    margin-right: 25px;
+}
+
+.last .container .links a{
+    position: relative;
+    
+    margin: 0 5px;
+}
+
+
+.last .container .links a i{
+    color: var(--main-color);
+    font-size: 70px;
+    margin: 10px;
+}
+
+.last .container .links i:hover{
+    color: rgb(119 119 119 /75%);
+    position: relative;
+    animation: social .8s ;
+}
+
+/* End SocialMedia */
+/* Start Images */
+
+.last .images_section{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+.last .images_section .img{
+    overflow: hidden;
+}
+
+.last .images_section .img a img{
+    max-width: 100%;
+    height: 100%;
+    transition: .3s;
+}
+.last .images_section .img a img:hover{
+    transform: rotate(5deg) scale(1.2);
+}
+
+
+
+/* End Images */
+
+/* Start Footer */
+
+.footer{
+    padding: 50px 20px 10px 5px;
+    background-color: #0a233f;
+}
+
+.footer .container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 40px ;
+    width: 95%;
+}
+
+.footer .container .logo{
+    width: 30%;
+}
+
+.footer .container .info{
+    color: white;
+}
+.footer .container .info h3{
+    margin-bottom:5px;
+}
+.footer .container .info p {
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+.footer .container .info  .follow{
+    margin-top: 30px;
+}
+.footer .container .info  a:hover{
+    color: white;
+}
+.footer .container .info a{
+    
+    color: var(--seconed-color);
+    font-weight: bold;
+}
+
+.footer .info .social_icon{
+    display: flex;
+    position: relative;
+}
+.footer .info .social_icon a{
+    
+    width: 10%;
+    margin: 10px 15px 10px 0;
+}
+
+
+
+.footer .global {
+    text-align: center;
+}
+.footer .global p{
+    margin: 40px 0;
+    color: white;
+}
+.footer .global p a:hover{
+    color: white;
+}
+.footer .global p a{
+    color: var(--seconed-color);
+    font-weight: bold;
+}
+.footer a:hover{
+    text-decoration: dotted;
+    text-decoration-line: underline;
+}
+
+/* End Footer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Start Animation */
+@keyframes social {
+    0%{
+       top: 0;
+    }
+    20%{
+       top: -30%;
+    }
+    35%{
+        top: 0;
+    }
+    50%{
+       top: -25%;
+    }
+    70%{
+       top: 0;
+    }
+    90%{
+        top: -15%;
+    }
+    100%{
+        top: 0;
+     }
+    
+}
+
+/* End Animation */
