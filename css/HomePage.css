@@ -58,8 +58,6 @@ ul {
 }
 
 /* End Global Rules */
-
-/* ----------------------------------- FAWZII ------------------------------------- */
 /* Start Header */
 
 .header{
@@ -203,7 +201,6 @@ ul {
 }
 
 
-/* ----------------------------------- Abdo Walid ------------------------------------- */
 
 
 .h1{
@@ -310,7 +307,7 @@ ul {
 }
 
 
-/* Shefo */
+
 
 .flexSplit {
     display: -webkit-flex;
@@ -390,17 +387,7 @@ h2 {
     font-size: 1.15em;
     margin: 0px;
 }
-/* h3 {
-    font-size: 1.65em;
-    line-height: 1.25em;
-    font-weight: 600;
-    color: #0a233f;
-    font-family: "Open Sans",Arial,san-serif;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    
 
-} */
 .flexSplit .news .newsList a {
     color: #236595;
     line-height: 1.5em;
@@ -553,7 +540,7 @@ a {
     max-width: 350px;
 }
 
-/* --------------------------------------Emaad------------------------------------- */
+
 
 /* Start SocialMedia */
 
