@@ -1,0 +1,446 @@
+/* Start Variables */
+:root{
+    --main-color:#0a233f;
+    --seconed-color:#00b2e2;
+
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Open Sans",Arial,san-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* End Global Rules */
+/* Start Header */
+
+.header{
+    
+    background-color: #0a233f;
+    position: relative;
+    box-shadow: 0 0 10px #ddd;
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 15px;
+}
+.header .logo{
+    color: #ffffff;
+    font-size: x-large;
+    font-weight: bold;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}    
+.header .logo img{
+    width: 322px;
+}
+.header .main-nav{
+    display: flex;
+
+}
+.header .main-nav > li >a{
+
+    height: 78px;
+    padding: 0px 15px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    display:flex;
+    align-items: center;
+    position: relative;
+    transition: 0.3s;
+    overflow:hidden;
+    margin-top: 70px;
+}
+.header .main-nav > li >a::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: skyblue;
+    top: 0;
+    left: -100%;
+    transition: 0.3s;
+}
+.header .main-nav > li >a:hover{
+    background-color: #0a233f;
+    color: skyblue;
+}
+.header .main-nav > li >a:hover::before{
+    left: 0;
+}
+ 
+.header .container .ser form{
+   
+    position: absolute;
+    right: 50px;
+    top: 30px;
+}
+
+
+.header .container .ser .college-menu {
+    background-color: white;
+    position: absolute;
+    z-index: 2;
+    right: 125px;
+    top: 220px;
+    opacity: 0;
+    z-index: -5;
+    transition: .5s;
+}
+
+.header .ser .main-nav .colleges:hover .college-menu{
+    z-index: 100;
+    opacity: 1;
+    top: 180px;
+}
+
+.header .container .ser .college-menu li{
+    font-size: 19px;
+    padding: 5px 25px;
+    margin: 3px 5px;
+    position: relative;
+}
+
+.header .container .ser .college-menu li a{
+    color: var(--main-color);
+    font-weight: 300;
+    position: relative;
+    
+}
+.header .container .ser .college-menu li::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 115%;
+    background-color: #dad7d7;
+    left: -5px;
+    top: -3px;
+    z-index: -1;
+    transition: .5s;
+}
+
+
+.header .container .ser .college-menu li:hover::before{
+    width: 310.344px;
+}
+
+
+.header .container .ser .college-menu li a::after{
+    content: "";
+    position: absolute;
+    width: 310.45px;
+    height: 2px;
+    background-color:#dad7d7;
+    left: -30px;
+    bottom: -9px;
+}
+
+
+
+
+
+/* End Header */
+
+
+/* Start landing */
+
+.landing  {
+    position: relative;
+}
+.landing .image p{
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50% , -50%);
+    color: white;
+    text-shadow:0 0 5px black ;
+    font-size: 18px;
+    text-align: center;
+    line-height: 2;
+}
+.landing .image img{
+    width: 100%;
+    
+}
+
+
+
+/* End landing */
+
+
+/* Start Welcome */
+
+.welcome .container .welcome-messege{
+    font-size: 35px;
+    text-align: center;
+    color: #72767e;
+    font-weight: 400;
+}
+
+.welcome .container .p-tour{
+    text-align: center;
+    margin: 30px;
+}
+.welcome .container .tour{
+    background-color: #04487a;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+.welcome .container .tour:hover{
+    background-color: var(--seconed-color);
+    color: var(--main-color);
+
+}
+
+.welcome .container .anniversary{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 3px 5px;
+}
+
+
+.welcome .container .images img{
+    height: 275px;
+}
+.welcome .container .images{
+    display: flex;
+    width: 95%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.welcome .container .more{
+    font-size: 20px;
+    text-align: center;
+    margin: 30px;
+}
+
+.welcome .container .more a{
+    background-color: #33609e;
+    font-size: 16px;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+.welcome .container .more a:hover{
+    background-color: var(--seconed-color);
+    color: var(--main-color);
+}
+
+
+/* End Welcome */
+
+/* college-links */
+
+.college-links .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    gap: 30px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+
+.college-links .container .grid-div img{
+    width: 100%;
+}
+.college-links .container .grid-div h2{
+    /* margin-bottom: 20px; */
+    background-color: #33609e;
+    color: white;
+    padding: 8px 12px;
+}
+
+.college-links .container .grid-div .links {
+    height: 480px;
+}
+.college-links .container .links{
+    background-color: #d4e0e8;
+    padding:20px 15px 30px 15px;
+    line-height: 1.5;
+} 
+
+.college-links .container .links ul{ 
+    list-style:disc;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.college-links .container .links ul li a{
+    color: #00538f;
+} 
+.college-links .container .links .button{
+    background-color: #00538f;
+    text-align: center;
+    margin: 25px 0 35px 0;
+    border-radius: 10px;
+    padding: 10px;
+} 
+.college-links .container .links .button:hover{
+    background-color: #0a233f;
+}
+.college-links .container .links .button a{
+    font-size: 15px;
+    color: white;
+    padding: 15px 10px;
+    font-weight: 600;
+}
+
+
+
+/* college-links */
+
+/*Button scroll to the top*/
+.up{
+    position: fixed;
+    bottom: 10px;
+    color: #5c5c5d;
+    font-size: 35px;
+    right: -40px;
+    padding: 5px;
+    border-radius: 20px;
+    transition: .2s;
+    cursor: pointer;
+    
+}
+.up:hover{
+    color: var(--seconed-color);
+    font-size: 43px;
+}
+.show{
+    right: 10px;
+}
+
+
+/* Start Footer */
+
+.footer{
+    padding: 50px 20px 10px 5px;
+    background-color: #0a233f;
+}
+
+.footer .container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 40px ;
+    width: 95%;
+}
+
+.footer .container .logo{
+    width: 30%;
+}
+
+.footer .container .info{
+    color: white;
+}
+.footer .container .info h3{
+    margin-bottom:5px;
+}
+.footer .container .info p {
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+.footer .container .info  .follow{
+    margin-top: 30px;
+}
+.footer .container .info  a:hover{
+    color: white;
+}
+.footer .container .info a{
+    
+    color: var(--seconed-color);
+    font-weight: bold;
+}
+
+.footer .info .social_icon{
+    display: flex;
+    position: relative;
+}
+.footer .info .social_icon a{
+    
+    width: 10%;
+    margin: 10px 15px 10px 0;
+}
+
+
+
+.footer .global {
+    text-align: center;
+}
+.footer .global p{
+    margin: 40px 0;
+    color: white;
+}
+.footer .global p a:hover{
+    color: white;
+}
+.footer .global p a{
+    color: var(--seconed-color);
+    font-weight: bold;
+}
+.footer a:hover{
+    text-decoration: dotted;
+    text-decoration-line: underline;
+}
+
+/* End Footer */
