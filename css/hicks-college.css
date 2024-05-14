@@ -1,3 +1,64 @@
+/* Start Variables */
+:root{
+    --main-color:#0a233f;
+    --seconed-color:#00b2e2;
+
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Open Sans",Arial,san-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* End Global Rules */
+
 /* Start Header */
 
 .header{
@@ -133,3 +194,207 @@
 
 
 /* End Header */
+
+.headimg img{
+    width: 100%;
+}
+.sitebar .container .link-hicks{
+    padding-top: 1%;
+    font-size: 30px;
+    padding-bottom: 1%;
+    text-decoration: none;
+}
+.sitebar a{
+    color: #0a233f;
+    text-decoration: none;
+}
+.sitebar a:hover{
+
+color: #00b2e2;
+}
+ a{
+    font-weight: bold;
+    font-family: "Open Sans",Arial,san-serif;
+    color: #236595;
+    text-decoration: none;
+}
+
+
+/*main*/
+#content .main .container{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+.container:before, 
+.container:after {
+    display: table;
+    content: " ";
+}
+.h1-c{
+    font-size: 2.25rem;
+    font-weight: 600;
+    background: #0a233f;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 1.35rem;
+}
+
+
+.cardsflex3col .c6blue{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3%;
+}
+
+
+.cardsflex3col .bluecard a{
+    text-align: center;
+    align-self: center;
+}
+
+.cardsflex3col .bluecard a img{
+    width: 80%;
+}
+.cardsflex3col .bluecard a p{
+    font-size: 17px;
+}
+
+.cardsflex3col .bluecard{
+    
+    margin: 9px 0;
+    padding: 20px;
+    
+}
+ .bluecard{
+    
+    display: flex;
+    background-color: #0a233f;
+    vertical-align: baseline;
+}
+.cardsflex3col .bluecard:hover{
+    background-color: #00b2e2;
+
+}
+.socials-icon i{
+padding: 70px;
+font-size:70px;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+.sm{
+    display: flex;
+    background-color:rgb(214, 233, 255);
+    vertical-align: baseline;
+    margin-bottom: 30px;
+}
+.socials-icon i:hover{
+background-color: #00b2e2;
+
+}
+
+.videosimg img
+{
+    width: 33%;
+    padding: 10px;
+    padding-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    padding: 50px 20px 10px 5px;
+    background-color: #0a233f;
+}
+
+.footer .container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 40px ;
+    width: 95%;
+}
+
+.footer .container .logo{
+    width: 30%;
+}
+
+.footer .container .info{
+    color: white;
+}
+.footer .container .info h3{
+    margin-bottom:5px;
+}
+.footer .container .info p {
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+.footer .container .info  .follow{
+    margin-top: 30px;
+}
+.footer .container .info  a:hover{
+    color: white;
+}
+.footer .container .info a{
+    
+    color: var(--seconed-color);
+    font-weight: bold;
+}
+
+.footer .info .social_icon{
+    display: flex;
+    position: relative;
+}
+.footer .info .social_icon a{
+    
+    width: 10%;
+    margin: 10px 15px 10px 0;
+}
+
+
+
+.footer .global {
+    text-align: center;
+}
+.footer .global p{
+    margin: 40px 0;
+    color: white;
+}
+.footer .global p a:hover{
+    color: white;
+}
+.footer .global p a{
+    color: var(--seconed-color);
+    font-weight: bold;
+}
+.footer a:hover{
+    text-decoration: dotted;
+    text-decoration-line: underline;
+}
+
+/* End Footer */
