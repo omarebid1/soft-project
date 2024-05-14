@@ -1,0 +1,135 @@
+/* Start Header */
+
+.header{
+    
+    background-color: #0a233f;
+    position: relative;
+    box-shadow: 0 0 10px #ddd;
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 15px;
+}
+.header .logo{
+    color: #ffffff;
+    font-size: x-large;
+    font-weight: bold;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}    
+.header .logo img{
+    width: 322px;
+}
+.header .main-nav{
+    display: flex;
+
+}
+.header .main-nav > li >a{
+
+    height: 78px;
+    padding: 0px 15px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    display:flex;
+    align-items: center;
+    position: relative;
+    transition: 0.3s;
+    overflow:hidden;
+    margin-top: 70px;
+}
+.header .main-nav > li >a::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: skyblue;
+    top: 0;
+    left: -100%;
+    transition: 0.3s;
+}
+.header .main-nav > li >a:hover{
+    background-color: #0a233f;
+    color: skyblue;
+}
+.header .main-nav > li >a:hover::before{
+    left: 0;
+}
+ 
+.header .container .ser form{
+   
+    position: absolute;
+    right: 50px;
+    top: 30px;
+}
+
+
+.header .container .ser .college-menu {
+    background-color: white;
+    position: absolute;
+    z-index: 2;
+    right: 125px;
+    top: 205px;
+    opacity: 0;
+    z-index: -5;
+    transition: .5s;
+}
+
+.header .ser .main-nav .colleges:hover .college-menu{
+    z-index: 100;
+    opacity: 1;
+    top: 180px;
+}
+
+.header .container .ser .college-menu li{
+    font-size: 19px;
+    padding: 5px 25px;
+    margin: 3px 5px;
+    position: relative;
+}
+
+.header .container .ser .college-menu li a{
+    color: var(--main-color);
+    font-weight: 300;
+    position: relative;
+    
+}
+.header .container .ser .college-menu li::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 115%;
+    background-color: #dad7d7;
+    left: -5px;
+    top: -3px;
+    z-index: -1;
+    transition: .5s;
+}
+
+
+.header .container .ser .college-menu li:hover::before{
+    width: 310.344px;
+}
+
+
+.header .container .ser .college-menu li a::after{
+    content: "";
+    position: absolute;
+    width: 310.45px;
+    height: 2px;
+    background-color:#dad7d7;
+    left: -30px;
+    bottom: -9px;
+}
+
+
+
+
+
+/* End Header */
